@@ -6,8 +6,9 @@ const App = () => {
   return (
     <ChatEngine
       height='100vh'
-      projectID={projectID}
-      userName={localStorage.getItem('username')}
+      projectID='6be35fa6-d7fe-4b29-9072-2287106f30be'
+      userName='userOne'
+      userSecret='123456'
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
       onNewMessage={() =>
         new Audio(
